@@ -5,10 +5,11 @@ const firestore = FirebaseConfig.firestore;
 const storageBucket = FirebaseConfig.storageBucket;
 const admin = FirebaseConfig.admin;
 
+// calling api functions on http requests - will be added a /api on path
 exports.api = functions.https.onRequest(api);
 
 // https://crontab.guru/
-
+// cron function example
 const runtimeOptions = {
   timeoutSeconds: 300,
   memory: "256MB",
