@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Firebase Cloud Functions API Template
 
 This project is an API template built using firebase stack.
 
