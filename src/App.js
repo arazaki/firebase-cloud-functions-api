@@ -79,7 +79,7 @@ function App() {
         "events",
         inputRef.current.value,
         {
-          title: "Trip 2",
+          title: "Updated Event",
         }
       );
       setInfo(response);
