@@ -16,3 +16,13 @@ You must have a firebase project. To create a project, go to [firebase console](
 
 - After cloning this project, run `npm install`, and `npm start`. This will start the react application.
 - Go to `cd functions` and run `npm install` to install firebase api dependencies. Run `npm run serve`. It will start to serve the API endpoints.
+
+## Github Actions
+
+In order to use github actions, it is necessary to:
+
+- Create secret keys:
+  - FIREBASE_TOKEN
+  -
+
+To create FIREBASE_TOKEN key, run `firebase login:ci` on your terminal.
