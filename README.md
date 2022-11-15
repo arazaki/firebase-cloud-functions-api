@@ -23,7 +23,7 @@ Clone your repository and open on your IDE.
 Go to your firebase console and create a new project, or use a existing one. Must be a project with billing so you can use Cloud Functions.
 To create a project, go to [firebase console](https://console.firebase.google.com/). Copy the `KEYS` provided by firebase in a `.env` file.
 
-```
+```env
 REACT_APP_API_KEY="apiKey"
 REACT_APP_AUTH_DOMAIN="authDomain"
 REACT_APP_PROJECT_ID="projectId"
@@ -34,7 +34,8 @@ REACT_APP_MEASUREMENT_ID="measurementId"
 REACT_APP_CLOUD_FUNCTION_API_URL="cloudFunctionApiUrl" -> find this after deploying your cloud functions for the first time
 ```
 
-**Starting firebase on terminal**
+#### Starting firebase on terminal
+
 Run `firebase init` on terminal
 Select `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys`
 Select `Hosting: Set up GitHub Action deploys`
@@ -63,7 +64,8 @@ Hit `Enter` to select the recommended port for emulator
 UI
 Inform `Yes` to download the emulators and hit `Enter`.
 
-**Updating files**
+#### Updating files
+
 On the project folder find the files `.github/workflows/firebase-hosting-merge.yml` and `.github/workflows/firebase-hosting-pull-request.yml`.
 Update the variable `YOUR_FIREBASE_SERVICE_ACCOUNT` with your firebase service account. You can find on the repository settings (github), under `Secrets/Actions`.
 
