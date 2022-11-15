@@ -15,12 +15,15 @@ There is also firebase storage methods to upload and delete files.
 ### 1. Create a new repository
 
 Select the option `Use this template` to create a new repository.
+
 Inform a name to your new repository and select `Private`.
+
 Clone your repository and open on your IDE.
 
 ### 2. Create a firebase project
 
 Go to your firebase console and create a new project, or use a existing one. Must be a project with billing so you can use Cloud Functions.
+
 To create a project, go to [firebase console](https://console.firebase.google.com/). Copy the `KEYS` provided by firebase in a `.env` file.
 
 ```env
@@ -66,22 +69,33 @@ REACT_APP_CLOUD_FUNCTION_API_URL="cloudFunctionApiUrl" -> find this after deploy
 #### Updating files
 
 On the project folder find the files `.github/workflows/firebase-hosting-merge.yml` and `.github/workflows/firebase-hosting-pull-request.yml`.
+
 Update the variable `YOUR_FIREBASE_SERVICE_ACCOUNT` with your firebase service account. You can find on the repository settings (github), under `Secrets/Actions`.
 
 ### 3. Create Keys on Github
 
 On Github Secret Actions, create the same keys present on the `.env` file. For that, select `New repository secret`. That is going to be used for on the deployment process.
-Create an additional key called `FIREBASE_TOKEN`. For that, run `firebase login:ci` on your terminal. That will open an OAUTH popup.
+
+Create an additional key called `FIREBASE_TOKEN`. For that, run `firebase login:ci` on your terminal.
+
+That will open an OAUTH popup.
+
 Copy the token and save on Github Secret Actions under the name `FIREBASE_TOKEN`.
 
-**Cloud Function first deploy**
+#### Cloud Function first deploy
+
 Run `npm install` on the project root folder to install the dependencies.
+
 Go to `functions` folder `cd functions`.
+
 Run `npm run deploy`.
 
-**Create the REACT_APP_CLOUD_FUNCTION_API_URL key on Github**
+#### Create the REACT_APP_CLOUD_FUNCTION_API_URL key on Github
+
 Go to [firebase console](https://console.firebase.google.com/), and under your project, select `Functions` and copy the HTTP url (hover the Request on Trigger column).
+
 Go to the `.env` file and update the `REACT_APP_CLOUD_FUNCTION_API_URL` with this url.
+
 Create a new repository secret on Github Secret Actions.
 
 ### 3. Commands
@@ -90,13 +104,3 @@ Create a new repository secret on Github Secret Actions.
 - Go to `cd functions` and run `npm install` to install firebase api dependencies. Run `npm run serve`. It will start to serve the API endpoints.
 
 ### 4. Cloud functions first deploy
-
-## Github Actions
-
-In order to use github actions, it is necessary to:
-
-- Create secret keys:
-  - FIREBASE_TOKEN
-  -
-
-To create FIREBASE_TOKEN key, run `firebase login:ci` on your terminal.
