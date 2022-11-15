@@ -36,33 +36,32 @@ REACT_APP_CLOUD_FUNCTION_API_URL="cloudFunctionApiUrl" -> find this after deploy
 
 #### Starting firebase on terminal
 
-Run `firebase init` on terminal
-Select `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys`
-Select `Hosting: Set up GitHub Action deploys`
-Select `Emulators: Set up local emulators for Firebase products`
-Select `Functions: Configure a Cloud Functions directory and its files`
-Hit `Enter`
-Select `Use an existing project` and hit `Enter`
-Select the project you created and hit `Enter`
-Select your preferred language and hit `Enter`
-Select your preferred configuration regarding ESLint
-Select `No` for overwriting `functions/package.json` file and hit `Enter`.
-Select `No` for overwriting `functions/index.js` file and hit `Enter`.
-Select `No` for overwriting `functions/.gitignore` file and hit `Enter`.
-Select `Yes` for installing dependencies with npm and hit `Enter`.
-Inform `build` as public directory and hit `Enter`.
-Select `Yes` for configuring as a single-page app and hit `Enter`.
-Select `Yes` for setup automatic builds and deploys and hit `Enter`.
-Inform the repository created for this project and hit `Enter`.
-Select `No` for setup the workflow to run a build script as the script is already created.
-Select `No` for setup the automatic deployment when PR is merged as the script is already created.
-Select `Functions Emulator` and `Hosting Emulator` and hit `Enter`
-Hit `Enter` to select the recommended port for functions emulator
-Hit `Enter` to select the recommended port for hosting emulator
-Inform `Yes` to enable Emulator UI and hit `Enter`.
-Hit `Enter` to select the recommended port for emulator
-UI
-Inform `Yes` to download the emulators and hit `Enter`.
+- Run `firebase init` on terminal
+- Select `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys`
+- Select `Hosting: Set up GitHub Action deploys`
+- Select `Emulators: Set up local emulators for Firebase products`
+- Select `Functions: Configure a Cloud Functions directory and its files`
+- Hit `Enter`
+- Select `Use an existing project` and hit `Enter`
+- Select the project you created and hit `Enter`
+- Select your preferred language and hit `Enter`
+- Select your preferred configuration regarding ESLint
+- Select `No` for overwriting `functions/package.json` file and hit `Enter`.
+- Select `No` for overwriting `functions/index.js` file and hit `Enter`.
+- Select `No` for overwriting `functions/.gitignore` file and hit `Enter`.
+- Select `Yes` for installing dependencies with npm and hit `Enter`.
+- Inform `build` as public directory and hit `Enter`.
+- Select `Yes` for configuring as a single-page app and hit `Enter`.
+- Select `Yes` for setup automatic builds and deploys and hit `Enter`.
+- Inform the repository created for this project and hit `Enter`.
+- Select `No` for setup the workflow to run a build script as the script is already created.
+- Select `No` for setup the automatic deployment when PR is merged as the script is already created.
+- Select `Functions Emulator` and `Hosting Emulator` and hit `Enter`
+- Hit `Enter` to select the recommended port for functions emulator
+- Hit `Enter` to select the recommended port for hosting emulator
+- Inform `Yes` to enable Emulator UI and hit `Enter`.
+- Hit `Enter` to select the recommended port for emulator UI
+- Inform `Yes` to download the emulators and hit `Enter`.
 
 #### Updating files
 
