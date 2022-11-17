@@ -39,6 +39,7 @@ REACT_APP_CLOUD_FUNCTION_API_URL="cloudFunctionApiUrl" -> find this after deploy
 
 #### Starting firebase on terminal
 
+- Login into your firebase account with `firebase login`.
 - Run `firebase init` on terminal
 - Select `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys`
 - Select `Hosting: Set up GitHub Action deploys`
@@ -56,9 +57,11 @@ REACT_APP_CLOUD_FUNCTION_API_URL="cloudFunctionApiUrl" -> find this after deploy
 - Inform `build` as public directory and hit `Enter`.
 - Select `Yes` for configuring as a single-page app and hit `Enter`.
 - Select `Yes` for setup automatic builds and deploys and hit `Enter`.
+- Login into your account.
 - Inform the repository created for this project and hit `Enter`.
-- Select `No` for setup the workflow to run a build script as the script is already created.
-- Select `No` for setup the automatic deployment when PR is merged as the script is already created.
+- Select `No` for Set up the workflow to run a build script before every deploy?
+- Select `No` for GitHub workflow file for PR previews exists. Overwrite? firebase-hosting-pull-request.yml
+- Select `No` for Set up automatic deployment to your site's live channel when a PR is merged?
 - Select `Functions Emulator` and `Hosting Emulator` and hit `Enter`
 - Hit `Enter` to select the recommended port for functions emulator
 - Hit `Enter` to select the recommended port for hosting emulator
